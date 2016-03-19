@@ -24,5 +24,7 @@ module TOON
     config.active_record.raise_in_transactional_callbacks = true
 
     config.generators.template_engine = :slim
+
+    config.assets.paths << "#{Rails}/vendor/assets/fonts"
   end
 end

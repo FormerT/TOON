@@ -1,5 +1,20 @@
-- @feeds.each do |feed|
-  p = feed.username
-  p = feed.screenname
-  p = feed.text
-  p = feed.profile_image_url
+#feeds
+  .row
+    header.col.xs-12.sm-12.md-12
+      div.btn-icon.xs-2.sm-1.md-1.center
+        = link_to root_path
+          span.icon.icon-angle-left
+      div.keyword.xs-8.sm-10.md-10.center
+        h3 = params[:keyword]
+      div.btn-icon.xs-2.sm-1.md-1.center
+        span.icon.icon-plus
+
+  .row
+    - @feeds.each do |feed|
+      section.col.xs-12.sm-12.md-12
+        .container
+          .user
+            img src=feed.profile_image_url
+            p = feed.username
+            p = feed.screenname
+          .text = feed.text

@@ -1,3 +1,53 @@
 // Place all the styles related to the feeds controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#feeds {
+  header {
+    height: 50px;
+    background-color: #1f83c6;
+    color: #fff;
+    div {
+      height: 50px;
+    }
+    .center {
+      text-align: center;
+    }
+    .keyword > h3 {
+      height: 100%;
+    }
+    .btn-icon {
+      .icon {
+        font-size: 45px;
+      }
+    }
+    a:visited {
+      color: #fff;
+    }
+  }
+
+  section {
+    min-height: 80px;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+
+    .container {
+      display: flex;
+    }
+    .user {
+      width: 120px;
+      height: 100%;
+      img {
+        margin-top: 5px;
+        width: 80px;
+        height: 80px;
+      }
+      p {
+        margin: 0px;
+      }
+    }
+    .text {
+      height: 100%;
+      flex: 1;
+    }
+  }
+}
