@@ -3,12 +3,28 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #tags {
+  border-top: solid 1px #eee;
+    overflow: hidden;
+}
+
+#tags .tag-row {
+  position: relative;
   border-bottom: solid 1px #eee;
 }
+
+#tags .tag-row .delete-btn {
+  position: absolute;
+  top: 10px;
+  left: 220px;
+}
+
 #tags a {
-  width: 100%;
-  padding: 10px;
+  width: 90%;
+  padding: 10px 10px;
   display: block;
   color: #333;
-  border-bottom: solid 1px #eee;
+}
+
+input.input-keyword {
+  margin-top: 10px;
 }

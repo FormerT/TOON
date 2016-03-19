@@ -1,12 +1,11 @@
-/ TODO: form.action, hrefは、routeに追加されるまでハードコーディング
 
-= form_tag "/feeds", {method: "get", id: "text_search_form"}  do
-  .row
-    .col.md-12
-      = text_field_tag :keyword, "", class: "form-control"
+= form_tag feeds_path, {method: "get", id: "text_search_form"}  do
+    .col.md-12.
+      = text_field_tag :keyword, "", class: "form-control input-keyword"
 
 #tags
   .row
-    .col.md-12 v-for="tag in tags"
-      a href="/feeds?keyword={{ tag }}"
+    .col.md-12.tag-row v-for="tag in tags"
+      a href="feeds?keyword={{ tag }}"
         = "{{ tag }}"
+      .delete-btn.btn.btn-sm.btn-error 削除
