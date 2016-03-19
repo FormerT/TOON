@@ -14,3 +14,15 @@
  *= require_tree .
  *= require_self
  */
+
+ /* update SkyBlue */
+ .btn.btn {
+   padding: 5px 15px;
+   min-width: 30px;
+   font-size: 0.8em;
+   line-height: 1.2em;
+ }
+
+ .row {
+   overflow: hidden;
+ }
