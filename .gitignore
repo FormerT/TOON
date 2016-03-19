@@ -6,6 +6,9 @@
 
 .ruby-version
 
+# Ignore enviroment variables
+.env
+
 # Ignore bundler config.
 /.bundle
 /vendor/bundle
