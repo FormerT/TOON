@@ -1,30 +1,53 @@
 // Place all the styles related to the favorites controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 #tags {
-  border-top: solid 1px #eee;
-    overflow: hidden;
-}
+  overflow: hidden;
 
-#tags .tag-row {
-  position: relative;
-  border-bottom: solid 1px #eee;
-}
+  header {
+    height: 50px;
+    background-color: #1f83c6;
+    color: #fff;
+    div {
+      height: 50px;
+    }
+    .center {
+      text-align: center;
+    }
+    .keyword > h3 {
+      padding-top: 7px;
+      height: 100%;
+    }
+    .btn-icon {
+      .icon {
+        font-size: 45px;
+      }
+    }
+    a:visited {
+      color: #fff;
+    }
+  }
 
-#tags .tag-row .delete-btn {
-  position: absolute;
-  top: 10px;
-  left: 220px;
-}
+  #search {
+    margin-top: 10px;
+    border-bottom: solid 1px #eee;
+  }
 
-#tags a {
-  width: 90%;
-  padding: 10px 10px;
-  display: block;
-  color: #333;
-}
+  section {
+    position: relative;
+    border-bottom: solid 1px #eee;
 
-input.input-keyword {
-  margin-top: 10px;
+    .delete-btn {
+      position: absolute;
+      top: 10px;
+      left: 70%;
+    }
+
+    a {
+      width: 90%;
+      padding: 10px 10px;
+      display: block;
+      color: #333;
+    }
+  }
 }
