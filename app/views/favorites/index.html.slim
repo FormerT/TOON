@@ -1,11 +1,19 @@
-
-= form_tag feeds_path, {method: "get", id: "text_search_form"}  do
-    .col.md-12.
-      = text_field_tag :keyword, "", class: "form-control input-keyword"
-
 #tags
   .row
-    .col.md-12.tag-row v-for="tag in tags"
+    header.col.xs-12.sm-12.md-12
+      div.btn-icon.xs-2.sm-1.md-1.center
+      div.keyword.xs-8.sm-10.md-10.center
+        h3 TOON
+      div.btn-icon.xs-2.sm-1.md-1.center
+        span.icon.icon-menu
+
+  = form_tag feeds_path, { method: "get", id: "text_search_form" }  do
+    #search
+      .col.sm-12.md-12.
+        = text_field_tag :keyword, "", class: "form-control input-keyword"
+
+  .row
+    section.col.sm-12.md-12.swipe-tag v-for="tag in tags"
       a href="feeds?keyword={{ tag }}"
         = "{{ tag }}"
-      .delete-btn.btn.btn-sm.btn-error onclick="" 削除
+      .delete-btn.btn.btn-sm.btn-error 削除
